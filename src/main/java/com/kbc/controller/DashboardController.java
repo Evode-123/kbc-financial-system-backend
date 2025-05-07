@@ -14,7 +14,7 @@ import com.kbc.service.DashboardService;
 import com.kbc.service.DashboardService.DashboardOverviewDTO;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/dashboard")
 public class DashboardController {
 
