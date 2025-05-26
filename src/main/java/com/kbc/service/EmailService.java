@@ -21,7 +21,8 @@ public class EmailService {
         message.setTo(email);
         message.setSubject("Your Account Has Been Created");
         message.setText("Your account has been created. Your temporary password is: " + password + 
-                       "\nPlease change it after your first login.");
+                       "\nPlease change it after your first login.\n Follow this link to login: " +
+                       "\nhttps://kingdom-believers-church.vercel.app/login");
         mailSender.send(message);
     }
 
