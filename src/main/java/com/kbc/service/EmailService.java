@@ -4,25 +4,23 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.context.Context;
 
 @Service
 public class EmailService {
     private final JavaMailSender mailSender;
-    private final TemplateEngine templateEngine;
 
     public EmailService(JavaMailSender mailSender, TemplateEngine templateEngine) {
         this.mailSender = mailSender;
-        this.templateEngine = templateEngine;
     }
 
     public void sendUserCreationEmail(String email, String password) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(email);
-        message.setSubject("Your Account Has Been Created");
+        message.setSubject("Welcome to Kingdom Believers Church");
         message.setText("Your account has been created. Your temporary password is: " + password + 
-                       "\nPlease change it after your first login.\n Follow this link to login: " +
-                       "\nhttps://kingdom-believers-church.vercel.app/login");
+                       "\nPlease change it after your first login.\nFollow this link to login: " +
+                       "\n\nhttps://kingdom-believers-church.vercel.app/login"
+                       + "\n\n\nThis is authomatically generated Email don't reply to it please.");
         mailSender.send(message);
     }
 
