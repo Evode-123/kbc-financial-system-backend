@@ -162,7 +162,7 @@ public class AuthService {
         passwordResetTokenRepository.save(resetToken);
         
         // Send email
-        String resetLink = "http://localhost:3000/reset-password/" + token;
+        String resetLink = "https://kingdom-believers-church.vercel.app/reset-password/" + token;
         emailService.sendPasswordResetEmail(user.getEmail(), resetLink);
     }
 
