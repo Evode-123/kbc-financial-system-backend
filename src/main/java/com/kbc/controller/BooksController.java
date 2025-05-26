@@ -2,7 +2,6 @@ package com.kbc.controller;
 
 import com.kbc.model.Books;
 import com.kbc.service.BooksService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,13 +10,12 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/books")
 public class BooksController {
 
     private final BooksService booksService;
 
-    @Autowired
     public BooksController(BooksService booksService) {
         this.booksService = booksService;
     }

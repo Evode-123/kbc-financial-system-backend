@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/admin/users")
 @PreAuthorize("hasRole('ADMIN')")
 public class AdminController {

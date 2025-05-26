@@ -16,7 +16,7 @@ import com.kbc.service.ExpenseReportService.ExpenseReportRequestDTO;
 import com.kbc.service.ExpenseReportService.ExpenseReportSummaryDTO;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/reports")
 public class ExpenseReportController {
 

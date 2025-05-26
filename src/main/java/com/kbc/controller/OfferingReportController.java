@@ -16,7 +16,7 @@ import com.kbc.service.OfferingReportService.OfferingReportRequestDTO;
 import com.kbc.service.OfferingReportService.OfferingReportSummaryDTO;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/reports")
 public class OfferingReportController {
 

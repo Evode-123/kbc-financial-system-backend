@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/momo-offerings")
 public class MomoOfferingController {
 

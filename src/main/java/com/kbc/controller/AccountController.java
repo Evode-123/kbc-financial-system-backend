@@ -13,7 +13,7 @@ import com.kbc.service.AccountService.AccountStatsDTO;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/accounts")
 public class AccountController {
 

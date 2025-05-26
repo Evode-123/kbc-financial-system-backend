@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/currency")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 public class CurrencyController {
 
     @Autowired

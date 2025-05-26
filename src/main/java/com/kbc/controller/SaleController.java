@@ -2,7 +2,6 @@ package com.kbc.controller;
 
 import com.kbc.model.Sale;
 import com.kbc.service.SaleService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,13 +11,12 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://kingdom-believers-church.vercel.app")
 @RequestMapping("/api/sales")
 public class SaleController {
 
     private final SaleService saleService;
 
-    @Autowired
     public SaleController(SaleService saleService) {
         this.saleService = saleService;
     }
